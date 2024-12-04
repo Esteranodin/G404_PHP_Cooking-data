@@ -17,6 +17,13 @@ $top = $brut["feed"]["entry"]; # liste de films
 // print_r($top); 
 // echo "</pre>";
 
-echo $top['label'];
+// ------------- Afficher le top10 des films sous cette forme -------------
+
+
+$top10 = array_slice($top, 0, 10); 
+
+foreach ($top10 as $key => $value) 
+
+  
 
 ?>
