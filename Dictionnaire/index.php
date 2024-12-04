@@ -42,3 +42,5 @@ $dico = explode("\n", $string);
     
 // }
 // echo $wordQ;
+
+?>
