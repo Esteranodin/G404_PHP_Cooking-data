@@ -13,17 +13,24 @@ $top = $brut["feed"]["entry"]; # liste de films
 //  La variable $top = un tableau de la liste.
 // ==> clé principale = feed et sous-clé = entry
 
+// pour prévisualiser tableau 
 // echo "<pre>";
-// print_r($top); 
+// var_dump($top); 
 // echo "</pre>";
 
 // ------------- Afficher le top10 des films sous cette forme -------------
 
+foreach ($top as $index => $film) {
 
-$top10 = array_slice($top, 0, 10); 
+    echo($index +1) . " " . $film['im:name'] ['label'] . "<br>";
 
-foreach ($top10 as $key => $value) 
+    if($index + 1 === 10){
+        break;
+    }
+}
 
-  
+
+
+
 
 ?>
